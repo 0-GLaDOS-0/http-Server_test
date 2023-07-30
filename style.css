@@ -1,0 +1,21 @@
+body {background: orange}
+.block_img
+{
+    position: static;
+    display: block;
+}
+.img_element
+{
+    position: static;
+    display: block;
+    width: fit-content;
+    top: 0px;
+    border-collapse: separate;
+
+    background: grey;
+    border-spacing: 4px;
+}
+table img 
+{
+    display: block;
+}

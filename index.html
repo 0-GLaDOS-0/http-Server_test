@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="./image/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./style.css"> <!-- В момент когда браузер видит что ссылка в html ссылаеться на какой-то элемент в не html. Браузер отправляет http-запрос по адрессу '[адресс html][указаная сылка]', 
+  в данном случае запрос будет віглядеть так 'http://localhost:8000/dtyle.css'. Далее server.js должен обработать этот запрос и вернуть браузеру этот файл -->
+  <!-- Тоесть в момент когда загружается html он не загружается сразу вместе со всем что дополнительно в нём используется. Он загружает всё дополнительное при помощи дополнительных http-запросовю Которые отправляються на сервер по мере построения html страницы -->
+	<script async src="./script.js"></script>
+	<title>Test</title>
+</head>
+<body id="body">
+	<p id="H">Hello</p>
+	<div class="block_img">
+    <table class="img_element" cellpadding="0">
+      <tr>
+        <td><img src="./image/corridor_00.png" alt="corridor_00.png"></td>
+        <td><img src="./image/corridor_01.png" alt="corridor_01.png"></td>
+        <td><img src="./image/corridor_03.png" alt="corridor_03.png"></td>
+        <td><img src="./image/corridor_05.png" alt="corridor_05.png"></td>
+        <td><img src="./image/corridor_07.png" alt="corridor_07.png"></td>
+        <td><img src="./image/corridor_15.png" alt="corridor_15.png"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
